@@ -1,0 +1,48 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu__item {
+}
+
+.menu__item__name {
+  display: block;
+}
+
+.menu__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font: var(--media-m);
+  color: var(--white);
+  gap: 8px;
+}
+
+.menu__icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1280px) {
+  .menu__item__name {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 540px) {
+    .menu {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .menu {
+        display: none;
+    }
+}

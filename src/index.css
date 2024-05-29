@@ -1,68 +1,50 @@
+@import url("./styles/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* width */
+  --container-width: 1684px;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* colors */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  --bg-main: #292f36;
+  --bg-1: #292f36;
+  --bg-2: #1a1e23;
+  --brand-1: #12f7d6;
+  --brand-2: #98faec;
+  --grey: #43454d;
+  --white: #ffffff;
+  --html: #e54f26;
+  --css: #0c73b8;
+  --js: #e7a020;
+  --react: #28a9e0;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  /* font ubunty */
+  --bg-text-u: normal normal 400 137px/134px "Ubuntu", san-serif;
+  --h1-u: normal normal 400 64px/72px "Ubuntu", san-serif;
+  --h2-u: normal normal 400 32px/36px "Ubuntu", san-serif;
+  --button-u: normal normal 400 20px/24px "Ubuntu", san-serif;
+  --article-u: normal normal 300 16px/32px "Ubuntu", san-serif;
+  --para-u: normal normal 300 16px/18px "Ubuntu", san-serif;
+  --label-u-m: normal normal 500 14px/16px "Ubuntu", san-serif;
+  --label-u-l: normal normal 300 14px/16px "Ubuntu", san-serif;
+
+  /* font IBM flex mono */
+  --number-m: normal normal 500 48px/62px "IBM Plex Mono", san-serif;
+  --h2-m: normal normal 500 32px/42px "IBM Plex Mono", san-serif;
+  --logo-m: normal normal 500 32px/42px "IBM Plex Mono", san-serif;
+  --menu-m: normal normal 400 24px/32px "IBM Plex Mono", san-serif;
+  --media-m: normal normal 400 16px/20px "IBM Plex Mono", san-serif;
+  --para-m: normal normal 400 16px/20px "IBM Plex Mono", san-serif;
+  --code-m: normal normal 400 14px/18px "IBM Plex Mono", san-serif;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  background-color: var(--bg-main);
+  width: 100%;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+path {
+  fill: var(--brand-1);
 }

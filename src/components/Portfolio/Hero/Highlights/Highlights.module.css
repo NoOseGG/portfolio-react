@@ -1,0 +1,26 @@
+.highlights {
+    width: 215px;
+    height: 378px;
+    padding: 48px 32px;
+    background-color: var(--bg-2);
+    color: var(--white);
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .highlights__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .highlights__item span {
+    font: var(--number-m);
+    color: var(--brand-1);
+  }
+  
+  .highlights__item div {
+    font: var(--para-m);
+  }

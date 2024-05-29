@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  font: var(--logo-m);
+  color: var(--brand-1);
+  cursor: pointer;
+}
+
+.title {
+  font: var(--logo-m);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .icon {
+    font: var(--menu-m);
+  }
+
+  .title {
+    font: var(--menu-m);
+  }
+}
+
+@media (max-width: 390px) {
+  .icon {
+    font: var(--media-m);
+  }
+
+  .title {
+    font: var(--media-m);
+  }
+}
