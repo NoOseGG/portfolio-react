@@ -80,8 +80,17 @@
   background-color: var(--brand-1);
 }
 
-.card__button path {
-  fill: #000;
+.card__button:focus {
+  background-color: var(--bg-1);
+  color: var(--white);
+  border: 2px solid var(--brand-1);
 }
 
+.card__button path {
+  fill: #000;
+  transition: ease 1s;
+}
 
+.card__button:focus path {
+  fill: var(--white);
+}
