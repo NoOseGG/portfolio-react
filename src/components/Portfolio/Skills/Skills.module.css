@@ -21,6 +21,10 @@
   .skills__inner {
     padding: 64px;
   }
+
+  .scroll {
+    display: none;
+  }
 }
 
 @media (max-width: 390px) {
