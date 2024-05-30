@@ -5,8 +5,20 @@
   gap: 64px;
 }
 
+.title {
+  margin-top: 64px;
+  font: var(--h2-m);
+  color: var(--brand-1);
+}
+
 .link__to {
   position: relative;
+}
+
+.link__to__project {
+  font: var(--menu-m);
+  color: var(--brand-1);
+  border-bottom: 2px solid var(--white);
 }
 
 .button {
@@ -28,6 +40,12 @@
   .button {
     width: 36px;
     height: 36px;
+  }
+}
+
+@media (max-width: 550px) {
+  .link__to__project {
+    font: var(--media-m);
   }
 }
 

@@ -9,24 +9,11 @@
   align-items: center;
 }
 
-.link__to__project {
-  margin-top: 64px;
-  font: var(--menu-m);
-  color: var(--brand-1);
-  border-bottom: 2px solid var(--white);
-  top: 70px;
-  right: 105px;
-}
+
 
 @media (max-width: 768px) {
   .works__inner {
     padding: 64px;
-  }
-}
-
-@media (max-width: 550px) {
-  .link__to__project {
-    font: var(--media-m);
   }
 }
 

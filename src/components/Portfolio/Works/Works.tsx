@@ -14,13 +14,7 @@ const Works: React.FC = () => {
         <div className={styles.works__inner}>
           <img src={scroll} alt="scroll" />
           <Title />
-          <a
-            className={styles.link__to__project}
-            href="https://weather-pet-project.netlify.app/"
-            target="_blank"
-          >
-            View Website
-          </a>
+          
           <Projects />
         </div>
       </Container>
