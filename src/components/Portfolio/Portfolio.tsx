@@ -5,6 +5,7 @@ import Hero from "./Hero/Hero";
 import AboutMe from "./AboutMe/AboutMe";
 import Skills from "./Skills/Skills";
 import Footer from "./Footer/Footer";
+import Works from "./Works/Works";
 
 const Portfolio: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Portfolio: React.FC = () => {
       <Hero />
       <AboutMe />
       <Skills />
+      <Works />
       <Footer />
     </>
   );

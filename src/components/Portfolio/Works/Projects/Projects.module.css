@@ -1,0 +1,38 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.link__to {
+  position: relative;
+}
+
+.button {
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .project {
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 680px) {
+  .button {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 390px) {
+  .link__to__project {
+    font: var(--media-m);
+  }
+}
