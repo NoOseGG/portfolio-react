@@ -109,17 +109,18 @@
     align-items: center;
   }
 
-  .aboutMe__title {
-    font: var(--h2-u);
-  }
-}
-
-@media (max-width: 390px) {
   .aboutMe__inner {
     padding: 22px;
+  }
+
+  .aboutMe__title {
+    font: var(--h2-u);
   }
 
   .aboutMe__img {
     padding: 0 36px;
   }
+}
+
+@media (max-width: 390px) {
 }
