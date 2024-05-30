@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Title.module.css";
 
-const Title = () => {
+const Title: React.FC = () => {
   return (
     <>
       <h3 className={styles.works__title}>Works</h3>
