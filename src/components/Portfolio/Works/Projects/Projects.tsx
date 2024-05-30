@@ -15,7 +15,7 @@ const projects = [
     image: workWeather,
   },
   {
-    name: "Rick & Morty database",
+    name: "Rick & Morty",
     link: "https://rick-and-morty-pet-project.netlify.app/",
     image: workRM,
   },
