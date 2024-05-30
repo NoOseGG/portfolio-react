@@ -9,11 +9,21 @@
   align-items: center;
 }
 
+.scroll {
+  display: block;
+}
+
 
 
 @media (max-width: 768px) {
   .works__inner {
     padding: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll {
+    display: none;
   }
 }
 

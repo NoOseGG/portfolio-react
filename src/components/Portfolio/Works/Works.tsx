@@ -12,7 +12,7 @@ const Works: React.FC = () => {
     <section className={styles.works}>
       <Container>
         <div className={styles.works__inner}>
-          <img src={scroll} alt="scroll" />
+          <img src={scroll} alt="scroll" className={styles.scroll}/>
           <Title />
           
           <Projects />

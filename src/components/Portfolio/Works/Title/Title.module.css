@@ -12,3 +12,9 @@
   color: var(--white);
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .works__title {
+    margin-top: 0;
+  }
+}
