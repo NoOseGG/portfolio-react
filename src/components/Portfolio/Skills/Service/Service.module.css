@@ -1,26 +1,36 @@
 .service {
-    margin-top: 64px;
-    padding: 16px 24px;
-    width: 288px;
-    height: 132px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    background-color: var(--brand-2);
-    color: var(--bg-1);
-    border-radius: 8px;
-    border-left: 8px solid var(--css);
-  }
-  
-  .service path {
-    fill: var(--bg-1);
-  }
-  
+  margin-top: 64px;
+  padding: 16px 24px;
+  width: fit-content;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--brand-2);
+  color: var(--bg-1);
+  border-radius: 8px;
+  border-left: 8px solid var(--css);
+}
+
+.service path {
+  fill: var(--bg-1);
+}
+
+.service__name {
+  font: var(--menu-m);
+}
+
+.service__highlights {
+  font: var(--para-m);
+}
+
+@media (max-width: 335px) {
   .service__name {
-    font: var(--menu-m);
+    font: var(--media-m);
   }
-  
+
   .service__highlights {
-    font: var(--para-m);
+    font: var(--code-m);
   }
+}
