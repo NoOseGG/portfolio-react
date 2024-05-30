@@ -1,0 +1,30 @@
+.skills {
+  background-image: url("../../../assets/images/skills/skills-bg.png");
+}
+
+.skills__inner {
+  padding: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll {
+  display: block;
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 768px) {
+  .skills__inner {
+    padding: 64px;
+  }
+}
+
+@media (max-width: 390px) {
+  .skills__inner {
+    padding: 24px;
+  }
+}

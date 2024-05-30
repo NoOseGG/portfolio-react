@@ -1,0 +1,14 @@
+.title {
+  margin-top: 64px;
+  padding-bottom: 16px;
+  font: var(--h1-u);
+  color: var(--brand-1);
+  border-bottom: 2px solid var(--brand-1);
+}
+
+.subtitle {
+  margin-top: 16px;
+  font: var(--para-m);
+  color: var(--white);
+  text-align: center;
+}
