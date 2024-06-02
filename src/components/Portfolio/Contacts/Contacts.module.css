@@ -1,0 +1,110 @@
+.contacts {
+  background-color: var(--bg-2);
+}
+
+.contacts__inner {
+  padding: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll {
+  display: block;
+}
+
+.contacts__send__title {
+  margin-top: 102px;
+  padding: 16px 40px;
+  font: var(--logo-m);
+  border: 2px solid var(--brand-1);
+  border-top-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  color: var(--white);
+}
+
+.contacts__form {
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 128px;
+}
+
+.input__name {
+  width: 100%;
+  border-bottom: 1px solid var(--brand-2);
+  padding: 8px 0;
+
+  &::placeholder {
+    font: var(--para-u);
+  }
+}
+
+.input__email {
+  width: 100%;
+  border-bottom: 1px solid var(--brand-2);
+  padding: 8px 0;
+
+  &::placeholder {
+    font: var(--para-u);
+  }
+}
+
+.input__message {
+  margin-top: 64px;
+  width: 100%;
+  border-bottom: 1px solid var(--brand-2);
+  padding: 8px 0;
+
+  &::placeholder {
+    font: var(--para-u);
+  }
+}
+
+.send__btn {
+  margin-top: 64px;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font: var(--button-u);
+  background-color: var(--brand-1);
+  color: var(--bg-1);
+  border: 2px solid var(--brand-1);
+  border-radius: 32px;
+}
+
+.send__btn:hover {
+  background-color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.send__btn:focus {
+  background-color: var(--bg-1);
+  color: var(--white);
+  border: 2px solid var(--brand-1);
+}
+
+.send__btn path {
+  fill: var(--bg-1);
+}
+
+.send__btn:focus path {
+  fill: var(--white);
+}
+
+.label {
+  padding: 5px;
+  font: var(--para-u);
+  color: var(--brand-1);
+}

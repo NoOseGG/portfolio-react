@@ -8,8 +8,8 @@ const Title: React.FC = () => {
 
   return (
     <>
-      <h3 className={styles.title}>{t("skills-title")}</h3>
-      <p className={styles.subtitle}>{t("skills-subtitle")}</p>
+      <h3 className={styles.title}>Contact</h3>
+      <p className={styles.subtitle}>I’m currently available for freelance work</p>
     </>
   );
 };

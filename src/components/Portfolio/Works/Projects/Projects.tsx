@@ -7,6 +7,7 @@ import workRM from "/src/assets/images/works/works-r&m.png";
 import workToDo from "/src/assets/images/works/works-todo.png";
 import buttonLeft from "/src/assets/images/works/button-l.svg";
 import buttonRight from "/src/assets/images/works/button-r.svg";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
@@ -27,6 +28,7 @@ const projects = [
 ];
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
   const [count, setCount] = useState(0);
 
   const prevProject = () => {
@@ -54,7 +56,7 @@ const Projects: React.FC = () => {
         href={projects[count].link}
         target="_blank"
       >
-        View Website
+        {t("view-website")}
       </a>
       <div className={styles.project}>
         <img

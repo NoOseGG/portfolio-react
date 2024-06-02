@@ -1,8 +1,11 @@
 import React from "react";
 
 import styles from "./Service.module.css";
+import { useTranslation } from "react-i18next";
 
 const Service: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.service}>
       <svg
@@ -26,7 +29,7 @@ const Service: React.FC = () => {
           </clipPath>
         </defs>
       </svg>
-      <div className={styles.service__name}>Web Developement</div>
+      <div className={styles.service__name}>{t("skills-service")}</div>
       <div className={styles.service__highlights}>HTML·CSS·JS·REACT</div>
     </div>
   );
