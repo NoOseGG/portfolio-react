@@ -9,7 +9,7 @@ i18n
     .use(Backend)
     .init({
         debug: true,
-        fallbackLng: 'ru',
+        fallbackLng: 'en',
     })
 
 export default i18n
