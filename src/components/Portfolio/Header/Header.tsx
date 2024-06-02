@@ -6,6 +6,7 @@ import Container from "../../Container/Container";
 import Logo from "./Logo/Logo";
 import Search from "./Search/Search";
 import Menu from "./Menu/Menu";
+import { LanguageSwitch } from "./LanguageSwitch/LanguageSwitch";
 
 const Header: React.FC = () => {
   return (
@@ -13,7 +14,10 @@ const Header: React.FC = () => {
       <Container>
         <div className={styles.header__inner}>
           <Logo />
-          <Search />
+          <div className={styles.search__container}>
+            <LanguageSwitch />
+            <Search />
+          </div>
           <Menu />
         </div>
       </Container>

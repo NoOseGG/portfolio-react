@@ -5,37 +5,37 @@ import styles from "./AboutMe.module.css";
 
 import scroll from "/src/assets/scroll.svg";
 import aboutMeIMG from "/src/assets/images/about-me/about-me-img.png";
+import { useTranslation } from "react-i18next";
 
 const AboutMe: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.aboutMe}>
       <Container>
         <div className={styles.aboutMe__inner}>
-          <img src={scroll} className={styles.scroll}/>
+          <img src={scroll} className={styles.scroll} />
           <div className={styles.aboutMe__info__wrapper}>
             <div className={styles.aboutMe__info}>
-              <h2 className={styles.aboutMe__title}>About Me</h2>
+              <h2 className={styles.aboutMe__title}>{t('about-title')}</h2>
               <div className={styles.aboutMe__info__content}>
                 <span className={styles.tags}> &lt;p&gt; </span>
                 <div>
-                  <h3 className={styles.aboutMe__info__title}>Hello!</h3>
+                  <h3 className={styles.aboutMe__info__title}>{t('about-info-title')}</h3>
                   <p className={styles.aboutMe__info__text}>
-                    My name is Yury and I specialize in web developement that
-                    utilizes <span className={styles.color__brand}>HTML</span>,
-                    <span className={styles.color__brand}>CSS</span>,
-                    <span className={styles.color__brand}>JS</span>, and
-                    <span className={styles.color__brand}> REACT</span> etc.
+                    {t('about-info-p1')} <span className={styles.color__brand}>{t('html')}</span>,
+                    <span className={styles.color__brand}>{t('css')}</span>,
+                    <span className={styles.color__brand}>{t('js')}</span>, {t('and')}
+                    <span className={styles.color__brand}> {t('react')}</span> {t('etc')}
                     <br />
                     <br />
-                    I am a highly motivated individual and eternal optimist
-                    dedicated to writing clear, concise, robust code that works.
-                    Striving to never stop learning and improving.
+                    {t('about-info-p2')}
                     <br />
-                    <br /> When I'm not coding, I am writing bolgs, reading, or
-                    picking up some new hands-on art project like photography.
                     <br />
-                    <br />I like to have my perspective and belief systems
-                    challenged so that I see the world through new eyes.
+                    {t('about-info-p3')}
+                    <br />
+                    <br />
+                    {t('about-info-p4')}
                   </p>
                 </div>
                 <span className={styles.tags}> &lt;/p&gt; </span>

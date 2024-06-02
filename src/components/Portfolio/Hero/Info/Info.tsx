@@ -1,17 +1,20 @@
 import React from "react";
 
 import styles from "./Info.module.css";
+import { useTranslation } from "react-i18next";
 
 const Info: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.info}>
       <div>
         <span className={styles.tags}> &lt;h1&gt; </span>
         <h2 className={styles.info__title}>
-          Hey
+          {t('hey')}
           <br />
-          I'm <span className={styles.info__name}>Yury</span>,<br />
-          Front-End Developer
+          {t('iam')} <span className={styles.info__name}>{t('yury')}</span>,<br />
+          {t('front-end')}
         </h2>
         <span className={styles.tags}> &lt;/h1&gt; </span>
       </div>
@@ -19,12 +22,11 @@ const Info: React.FC = () => {
       <div>
         <span className={styles.tags}> &lt;p&gt; </span>
         <p className={styles.info__text}>
-          I help business grow by crafting amazing web experiences. If you’re
-          looking for a developer that likes to get stuff done,
+          {t('hero-info-text')}
         </p>
         <span className={styles.tags}> &lt;p&gt; </span>
         <div className={styles.info__send}>
-          Let's Talk
+          {t('lets-talk')}
           <div className={styles.info__send__icon}>
             <svg
               width="24"

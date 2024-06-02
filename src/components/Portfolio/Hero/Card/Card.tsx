@@ -3,13 +3,16 @@ import React from "react";
 import styles from "./Card.module.css";
 
 import profileAvatar from "../../../../assets/images/hero/profile-photo.png";
+import { useTranslation } from "react-i18next";
 
 const Card: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.card}>
       <img src={profileAvatar} alt="avatar" className={styles.card__avatar} />
-      <div className={styles.card__name}>Yury</div>
-      <div className={styles.card__proffesion}>Front-end developer</div>
+      <div className={styles.card__name}>{t('yury')}</div>
+      <div className={styles.card__proffesion}>{t('front-end')}</div>
 
       <ul className={styles.card__requisites__list}>
         <li className={styles.card__requisites__item}>
@@ -54,7 +57,7 @@ const Card: React.FC = () => {
               />
             </svg>
           </div>
-          Belarus
+          {t('belarus')}
         </li>
         <li className={styles.card__requisites__item}>
           <div>
@@ -73,7 +76,7 @@ const Card: React.FC = () => {
               />
             </svg>
           </div>
-          Full-time
+          {t('full-time')}
         </li>
         <li className={styles.card__requisites__item}>
           <div>
@@ -106,7 +109,7 @@ const Card: React.FC = () => {
       </ul>
 
       <button className={styles.card__button}>
-        Download CV
+        {t('download')} CV
         <svg
           width="24"
           height="24"

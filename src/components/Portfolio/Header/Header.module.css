@@ -12,6 +12,14 @@
   border-bottom: 1px solid var(--grey);
 }
 
+.search__container {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 @media (max-width: 1280px) {
 }
 
