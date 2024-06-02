@@ -5,6 +5,7 @@ import styles from "./Contacts.module.css";
 import Container from "../../Container/Container";
 import scroll from "/src/assets/scroll.svg";
 import iconSendBtn from "/src/assets/icons/icon-send-btn.svg";
+import Title from "./Title/Title";
 
 const Contacts: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Contacts: React.FC = () => {
       <Container>
         <div className={styles.contacts__inner}>
           <img src={scroll} className={styles.scroll} />
+          <Title />
           <div className={styles.contacts__send__title}>Send Me A Message</div>
           <form className={styles.contacts__form}>
             <div className={styles.input__container}>

@@ -72,6 +72,7 @@
 
 .send__btn {
   margin-top: 64px;
+  margin-bottom: 64px;
   padding: 16px 32px;
   display: flex;
   justify-content: center;
@@ -107,4 +108,56 @@
   padding: 5px;
   font: var(--para-u);
   color: var(--brand-1);
+}
+
+@media (max-width: 1280px) {
+  .contacts__form {
+    max-width: 592px;
+    margin: 64px auto 0;
+  }
+
+  .input__container {
+    gap: 64px;
+  }
+
+  .contacts__inner {
+    padding: 100 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll {
+    display: none;
+  }
+
+  .contacts__inner {
+    padding: 0 24px;
+  }
+
+  .input__container {
+    gap: 64px;
+  }
+}
+
+@media (max-width: 390px) {
+  .contacts__send__title {
+    font: var(--menu-m);
+    padding: 16px 30px;
+  }
+
+  .input__container {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contacts__inner {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 334px) {
+  .contacts__send__title {
+    font: var(--para-m);
+  }
 }
