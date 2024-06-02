@@ -4,7 +4,6 @@ import styles from "./Contacts.module.css";
 
 import Container from "../../Container/Container";
 import scroll from "/src/assets/scroll.svg";
-import iconSendBtn from "/src/assets/icons/icon-send-btn.svg";
 import Title from "./Title/Title";
 
 const Contacts: React.FC = () => {
