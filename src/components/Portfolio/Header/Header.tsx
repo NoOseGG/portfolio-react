@@ -7,6 +7,7 @@ import Logo from "./Logo/Logo";
 import Search from "./Search/Search";
 import Menu from "./Menu/Menu";
 import { LanguageSwitch } from "./LanguageSwitch/LanguageSwitch";
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
 
 const Header: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Header: React.FC = () => {
             <Search />
           </div>
           <Menu />
+          <BurgerMenu />
         </div>
       </Container>
     </header>
