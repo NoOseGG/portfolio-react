@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 
 import styles from "./SelectLanguage.module.css";
 import { useTranslation } from "react-i18next";
