@@ -20,7 +20,7 @@ const SelectLanguage: React.FC = () => {
   };
 
   return (
-    <select className={styles.select__language} onClick={handleChange}>
+    <select className={styles.select__language} onChange={handleChange}>
       <option value="english">English</option>
       <option value="russian">Русский</option>
     </select>
