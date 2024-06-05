@@ -26,10 +26,10 @@ export const LanguageSwitch: React.FC = () => {
         onChange={handleChange}
         defaultValue={i18n.language}
       >
-        <option className={styles.select__option} value="english">
+        <option className={styles.select__option} value="en">
           English
         </option>
-        <option className={styles.select__option} value="russian">
+        <option className={styles.select__option} value="ru">
           Русский
         </option>
       </select>
