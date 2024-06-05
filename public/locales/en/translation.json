@@ -33,5 +33,13 @@
 
   "works-title": "Works",
   "works-subtitle": "I had the pleasure of working with these awesome projects",
-  "view-website": "View Website"
+  "view-website": "View Website",
+
+  "contact-title": "Contact",
+  "contact-subtitle": "I’m currently available for freelance work",
+  "contact-send-title": "Send Me A Message",
+  "contact-form-name": "Enter your name",
+  "contact-form-email": "Enter your email",
+  "contact-form-message": "Enter your message",
+  "contact-form-send": "Send Message"
 }

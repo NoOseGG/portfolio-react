@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   .icon {
     font: var(--media-m);
   }

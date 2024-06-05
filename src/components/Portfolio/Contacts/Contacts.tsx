@@ -5,15 +5,20 @@ import styles from "./Contacts.module.css";
 import Container from "../../Container/Container";
 import scroll from "/src/assets/scroll.svg";
 import Title from "./Title/Title";
+import { useTranslation } from "react-i18next";
 
 const Contacts: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.contacts}>
       <Container>
         <div className={styles.contacts__inner}>
           <img src={scroll} className={styles.scroll} />
           <Title />
-          <div className={styles.contacts__send__title}>Send Me A Message</div>
+          <div className={styles.contacts__send__title}>
+            {t("contact-send-title")}
+          </div>
           <form className={styles.contacts__form}>
             <div className={styles.input__container}>
               {/* <label htmlFor="name" className={styles.label}>Your Name*</label> */}
@@ -22,14 +27,14 @@ const Contacts: React.FC = () => {
                 id="name"
                 type="text"
                 className={styles.input__name}
-                placeholder="Enter your name"
+                placeholder={t("contact-form-name")}
               />
               <input
                 name="email"
                 id="email"
                 type="email"
                 className={styles.input__email}
-                placeholder="Enter your email"
+                placeholder={t("contact-form-email")}
               />
             </div>
             <input
@@ -37,10 +42,10 @@ const Contacts: React.FC = () => {
               id="message"
               type="text"
               className={styles.input__message}
-              placeholder="Enter your needs"
+              placeholder={t("contact-form-message")}
             />
             <button type="submit" className={styles.send__btn}>
-              Send Message
+              {t("contact-form-send")}
               <svg
                 width="24"
                 height="24"

@@ -30,7 +30,10 @@
   fill: var(--white);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
+  .search {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -39,11 +42,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .search {
     display: none;
   }
+}
 
+@media (max-width: 768px) {
   .search__icon {
     display: block;
     display: flex;
@@ -60,6 +65,6 @@
 
 @media (max-width: 390px) {
   .search__icon {
-    margin-right: 0;
+    margin-right: 15px;
   }
 }

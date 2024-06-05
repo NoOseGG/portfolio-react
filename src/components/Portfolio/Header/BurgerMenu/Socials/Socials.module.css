@@ -1,0 +1,19 @@
+.menu__list {
+
+}
+
+.menu__item + .menu__item{
+   margin-top: 20px;
+}
+
+.menu__link {
+    color: var(--brand-1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu__name {
+    margin-left: 10px;
+    font-size: 28px;
+}

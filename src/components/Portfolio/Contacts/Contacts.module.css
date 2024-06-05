@@ -139,12 +139,14 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 460px) {
   .contacts__send__title {
     font: var(--menu-m);
     padding: 16px 30px;
   }
+}
 
+@media (max-width: 390px) {
   .input__container {
     gap: 24px;
   }
