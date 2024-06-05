@@ -8,11 +8,11 @@ export const LanguageSwitch: React.FC = () => {
 
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     switch (event.target.value) {
-      case "english": {
+      case "en": {
         i18n.changeLanguage("en");
         break;
       }
-      case "russian": {
+      case "ru": {
         i18n.changeLanguage("ru");
         break;
       }
@@ -21,9 +21,17 @@ export const LanguageSwitch: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <select className={styles.select__language} onChange={handleChange}>
-        <option className={styles.select__option} value="english">English</option>
-        <option className={styles.select__option} value="russian">Русский</option>
+      <select
+        className={styles.select__language}
+        onChange={handleChange}
+        defaultValue={i18n.language}
+      >
+        <option className={styles.select__option} value="english">
+          English
+        </option>
+        <option className={styles.select__option} value="russian">
+          Русский
+        </option>
       </select>
     </div>
   );
