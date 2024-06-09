@@ -7,6 +7,7 @@ import Skills from "./Skills/Skills";
 import Footer from "./Footer/Footer";
 import Works from "./Works/Works";
 import Contacts from "./Contacts/Contacts";
+import Technologies from "./Technologies/Technologies";
 
 const Portfolio: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Portfolio: React.FC = () => {
       <AboutMe />
       <Skills />
       <Works />
+      <Technologies />
       <Contacts />
       <Footer />
     </>

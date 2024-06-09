@@ -1,4 +1,7 @@
 {
+  "english": "Английский",
+  "russian": "Русский",
+
   "header-title": "ЮрийСвириденко",
   "hero-title": "Разработчик",
   "hey": "Привет",
@@ -38,8 +41,11 @@
   "contact-title": "Контакты",
   "contact-subtitle": "В настоящее время я могу работать фрилансером",
   "contact-send-title": "Сообщение",
+  "contact-form-name-label": "Ваше имя*",
   "contact-form-name": "Введите имя*",
-  "contact-form-email": "Введите почту*",
+  "contact-form-email-label": "Ваша почта*",
+  "contact-form-email": "Введите почту",
+  "contact-form-message-label": "Ваше сообщение*",
   "contact-form-message": "Введите сообщение*",
   "contact-form-send": "Отправить сообщение"
 }

@@ -1,0 +1,30 @@
+.technologies {
+  background-color: var(--bg-1);
+}
+
+.technologies__inner {
+  padding: 128px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll {
+  display: block;
+}
+
+.technologies__title {
+  margin-top: 64px;
+  padding-bottom: 16px;
+  font: var(--h1-u);
+  color: var(--brand-1);
+  border-bottom: 2px solid var(--brand-1);
+}
+
+.technologies__subtitle {
+  margin-top: 16px;
+  font: var(--para-m);
+  color: var(--white);
+  text-align: center;
+}

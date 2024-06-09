@@ -4,7 +4,7 @@ import styles from "./SelectLanguage.module.css";
 import { useTranslation } from "react-i18next";
 
 const SelectLanguage: React.FC = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     switch (event.target.value) {
@@ -25,8 +25,8 @@ const SelectLanguage: React.FC = () => {
       onChange={handleChange}
       defaultValue={i18n.language}
     >
-      <option value="en">English</option>
-      <option value="ru">Русский</option>
+      <option value="en">{t("english")}</option>
+      <option value="ru">{t("russian")}</option>
     </select>
   );
 };

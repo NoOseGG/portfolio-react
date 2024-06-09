@@ -23,7 +23,7 @@ const Contacts: React.FC = () => {
             <div className={styles.input__container}>
               <div className={styles.input__wrapper}>
                 <label htmlFor="name" className={styles.label}>
-                  {t("contact-form-name")}
+                  {t("contact-form-name-label")}
                 </label>
                 <input
                   name="name"
@@ -36,7 +36,7 @@ const Contacts: React.FC = () => {
 
               <div className={styles.input__wrapper}>
                 <label htmlFor="email" className={styles.label}>
-                  {t("contact-form-email")}
+                  {t("contact-form-email-label")}
                 </label>
                 <input
                   name="email"
@@ -49,7 +49,7 @@ const Contacts: React.FC = () => {
             </div>
             <div className={styles.input__wrapper}>
               <label htmlFor="email" className={styles.label}>
-                {t("contact-form-message")}
+                {t("contact-form-message-label")}
               </label>
               <input
                 name="message"

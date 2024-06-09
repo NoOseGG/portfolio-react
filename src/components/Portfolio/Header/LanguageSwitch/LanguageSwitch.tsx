@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./LanguageSwitch.module.css";
 import styles from "./LanguageSwitch.module.css";
 export const LanguageSwitch: React.FC = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     switch (event.target.value) {
@@ -27,10 +27,10 @@ export const LanguageSwitch: React.FC = () => {
         defaultValue={i18n.language}
       >
         <option className={styles.select__option} value="en">
-          English
+          {t("english")}
         </option>
         <option className={styles.select__option} value="ru">
-          Русский
+          {t("russian")}
         </option>
       </select>
     </div>

@@ -1,4 +1,7 @@
 {
+  "english": "English",
+  "russian": "Russian",
+
   "header-title": "YurySvirydzenka",
   "hero-title": "Developer",
   "hey": "Hey",
@@ -38,8 +41,11 @@
   "contact-title": "Contact",
   "contact-subtitle": "I’m currently available for freelance work",
   "contact-send-title": "Send Me A Message",
-  "contact-form-name": "Enter your name*",
-  "contact-form-email": "Enter your email*",
-  "contact-form-message": "Enter your message*",
+  "contact-form-name-label": "Your name*",
+  "contact-form-name": "Enter your name",
+  "contact-form-email-label": "Your email*",
+  "contact-form-email": "Enter your email",
+  "contact-form-message-label": "Your message*",
+  "contact-form-message": "Enter your needs",
   "contact-form-send": "Send Message"
 }
