@@ -38,8 +38,8 @@
   "contact-title": "Contact",
   "contact-subtitle": "I’m currently available for freelance work",
   "contact-send-title": "Send Me A Message",
-  "contact-form-name": "Enter your name",
-  "contact-form-email": "Enter your email",
-  "contact-form-message": "Enter your message",
+  "contact-form-name": "Enter your name*",
+  "contact-form-email": "Enter your email*",
+  "contact-form-message": "Enter your message*",
   "contact-form-send": "Send Message"
 }

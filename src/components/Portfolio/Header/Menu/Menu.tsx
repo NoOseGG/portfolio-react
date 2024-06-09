@@ -1,13 +1,18 @@
 import React from "react";
 
 import styles from "./Menu.module.css";
+import { URLS } from "../../../../constants/constansts";
 
 const Menu: React.FC = () => {
   return (
     <menu>
       <ul className={styles.menu}>
         <li className={styles.menu__item}>
-          <a className={styles.menu__link} href="#">
+          <a
+            className={styles.menu__link}
+            href={URLS.instagram}
+            target="_blank"
+          >
             <div className={styles.menu__icon}>
               <svg
                 width="24"
@@ -38,7 +43,7 @@ const Menu: React.FC = () => {
           </a>
         </li>
         <li className={styles.menu__item}>
-          <a className={styles.menu__link} href="#">
+          <a className={styles.menu__link} href={URLS.linkedIn} target="_blank">
             <div className={styles.menu__icon}>
               <svg
                 width="24"
@@ -71,7 +76,7 @@ const Menu: React.FC = () => {
           </a>
         </li>
         <li className={styles.menu__item}>
-          <a className={styles.menu__link} href="#">
+          <a className={styles.menu__link} href={URLS.gitHub} target="_blank">
             <div className={styles.menu__icon}>
               <svg
                 width="24"

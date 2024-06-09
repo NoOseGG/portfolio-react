@@ -2,15 +2,13 @@ import React from "react";
 
 import styles from "./Socials.module.css";
 
+import { URLS } from "../../../../../constants/constansts";
+
 const Socials: React.FC = () => {
   return (
     <ul className={styles.menu__list}>
       <li className={styles.menu__item}>
-        <a
-          href="https://www.instagram.com/noose18"
-          target="_blank"
-          className={styles.menu__link}
-        >
+        <a href={URLS.instagram} target="_blank" className={styles.menu__link}>
           <svg
             width="50"
             height="50"
@@ -39,11 +37,7 @@ const Socials: React.FC = () => {
         </a>
       </li>
       <li className={styles.menu__item}>
-        <a
-          href="https://www.linkedin.com/in/yury-svirydzenka-30a03519a/"
-          target="_blank"
-          className={styles.menu__link}
-        >
+        <a href={URLS.linkedIn} target="_blank" className={styles.menu__link}>
           <svg
             width="50"
             height="50"
@@ -74,11 +68,7 @@ const Socials: React.FC = () => {
         </a>
       </li>
       <li className={styles.menu__item}>
-        <a
-          href="https://github.com/NoOseGG"
-          target="_blank"
-          className={styles.menu__link}
-        >
+        <a href={URLS.gitHub} target="_blank" className={styles.menu__link}>
           <svg
             width="50"
             height="50"

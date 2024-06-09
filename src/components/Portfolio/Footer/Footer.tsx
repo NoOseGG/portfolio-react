@@ -2,13 +2,16 @@ import React from "react";
 
 import styles from "./Footer.module.css";
 import Container from "../../Container/Container";
+import { URLS } from "../../../constants/constansts";
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <Container>
         <div className={styles.footer__inner}>
-          <span className={styles.reserved}>© 2024 YurySvirydzenka. All rights reserved.</span>
+          <span className={styles.reserved}>
+            © 2024 YurySvirydzenka. All rights reserved.
+          </span>
           <div className={styles.privacy}>
             <span>Privacy Policy</span>
             <span>Terms & Conditions</span>
@@ -16,7 +19,7 @@ const Footer: React.FC = () => {
           <ul className={styles.menu}>
             <li className={styles.menu__item}>
               <a
-                href="https://www.instagram.com/noose18"
+                href={URLS.instagram}
                 className={styles.menu__link}
                 target="_blank"
               >
@@ -47,7 +50,11 @@ const Footer: React.FC = () => {
               </a>
             </li>
             <li className={styles.menu__item}>
-              <a href="" className={styles.menu__link}>
+              <a
+                href={URLS.linkedIn}
+                className={styles.menu__link}
+                target="_blank"
+              >
                 <svg
                   width="16"
                   height="16"
@@ -77,7 +84,11 @@ const Footer: React.FC = () => {
               </a>
             </li>
             <li className={styles.menu__item}>
-              <a href="" className={styles.menu__link}>
+              <a
+                href={URLS.gitHub}
+                className={styles.menu__link}
+                target="_blank"
+              >
                 <svg
                   width="16"
                   height="16"

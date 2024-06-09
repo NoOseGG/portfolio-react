@@ -21,29 +21,44 @@ const Contacts: React.FC = () => {
           </div>
           <form className={styles.contacts__form}>
             <div className={styles.input__container}>
-              {/* <label htmlFor="name" className={styles.label}>Your Name*</label> */}
+              <div className={styles.input__wrapper}>
+                <label htmlFor="name" className={styles.label}>
+                  {t("contact-form-name")}
+                </label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  className={styles.input__name}
+                  placeholder={t("contact-form-name")}
+                />
+              </div>
+
+              <div className={styles.input__wrapper}>
+                <label htmlFor="email" className={styles.label}>
+                  {t("contact-form-email")}
+                </label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  className={styles.input__email}
+                  placeholder={t("contact-form-email")}
+                />
+              </div>
+            </div>
+            <div className={styles.input__wrapper}>
+              <label htmlFor="email" className={styles.label}>
+                {t("contact-form-message")}
+              </label>
               <input
-                name="name"
-                id="name"
+                name="message"
+                id="message"
                 type="text"
-                className={styles.input__name}
-                placeholder={t("contact-form-name")}
-              />
-              <input
-                name="email"
-                id="email"
-                type="email"
-                className={styles.input__email}
-                placeholder={t("contact-form-email")}
+                className={styles.input__message}
+                placeholder={t("contact-form-message")}
               />
             </div>
-            <input
-              name="message"
-              id="message"
-              type="text"
-              className={styles.input__message}
-              placeholder={t("contact-form-message")}
-            />
             <button type="submit" className={styles.send__btn}>
               {t("contact-form-send")}
               <svg

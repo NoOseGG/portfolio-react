@@ -38,8 +38,8 @@
   "contact-title": "Контакты",
   "contact-subtitle": "В настоящее время я могу работать фрилансером",
   "contact-send-title": "Сообщение",
-  "contact-form-name": "Введите Ваше имя",
-  "contact-form-email": "Введите Вашу электронную почту",
-  "contact-form-message": "Введите Ваше сообщение",
+  "contact-form-name": "Введите имя*",
+  "contact-form-email": "Введите почту*",
+  "contact-form-message": "Введите сообщение*",
   "contact-form-send": "Отправить сообщение"
 }

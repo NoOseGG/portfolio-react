@@ -63,6 +63,12 @@
   }
 }
 
+@media (max-width: 550px) {
+  .search__icon {
+    display: none;
+  }
+}
+
 @media (max-width: 390px) {
   .search__icon {
     margin-right: 15px;

@@ -4,13 +4,13 @@
   align-items: center;
 }
 
-input[type="checkbox"] {
+.container input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+.container label {
   cursor: pointer;
   text-indent: -9999px;
   width: 50px;
@@ -21,7 +21,7 @@ label {
   position: relative;
 }
 
-label:after {
+.container label:after {
   content: "";
   position: absolute;
   top: 1.25px;
@@ -33,16 +33,16 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+.container input:checked + label {
   background: var(--brand-1);
 }
 
-input:checked + label:after {
+.container input:checked + label:after {
   left: calc(100% - 1px);
   transform: translateX(-100%);
 }
 
-label:active:after {
+.container label:active:after {
   width: 20px;
 }
 

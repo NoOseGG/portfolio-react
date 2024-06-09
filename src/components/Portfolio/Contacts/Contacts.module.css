@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 64px;
 }
 
 .input__container {
@@ -37,6 +38,13 @@
   justify-content: space-between;
   align-items: center;
   gap: 128px;
+}
+
+.input__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .input__name {
@@ -60,7 +68,6 @@
 }
 
 .input__message {
-  margin-top: 64px;
   width: 100%;
   border-bottom: 1px solid var(--brand-2);
   padding: 8px 0;
@@ -105,7 +112,6 @@
 }
 
 .label {
-  padding: 5px;
   font: var(--para-u);
   color: var(--brand-1);
 }
