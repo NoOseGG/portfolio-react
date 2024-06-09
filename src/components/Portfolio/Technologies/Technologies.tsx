@@ -4,6 +4,8 @@ import styles from "./Technologies.module.css";
 
 import Container from "../../Container/Container";
 import scroll from "/src/assets/scroll.svg";
+import { technologiesData } from "./data/data";
+import Item from "./Item/Item";
 
 const Technologies: React.FC = () => {
   return (
@@ -15,6 +17,11 @@ const Technologies: React.FC = () => {
           <p className={styles.technologies__subtitle}>
             The technologies that I studied and used when creating projects.
           </p>
+        </div>
+        <div className={styles.item__container}>
+          {technologiesData.map((item) => (
+            <Item title={item.title} icon={item.icon} link={item.link} />
+          ))}
         </div>
       </Container>
     </section>

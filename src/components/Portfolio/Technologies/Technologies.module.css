@@ -28,3 +28,12 @@
   color: var(--white);
   text-align: center;
 }
+
+.item__container {
+  display: grid;
+  justify-content: center;
+  gap: 50px;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 64px;
+}
