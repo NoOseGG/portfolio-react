@@ -9,7 +9,6 @@ import iconAntDesign from "/src/assets/icons/techlogies/icon-ant-design.svg";
 import iconI18next from "/src/assets/icons/techlogies/icon-i18next.svg";
 import iconStyledComponents from "/src/assets/icons/techlogies/icon-styled-components.svg";
 import { TECHNOLOGIES } from "../../../../constants/constansts";
-import Technologies from "../Technologies";
 
 type ITechnologiesData = {
   title: string;
