@@ -47,5 +47,8 @@
   "contact-form-email": "Введите почту",
   "contact-form-message-label": "Ваше сообщение*",
   "contact-form-message": "Введите сообщение*",
-  "contact-form-send": "Отправить сообщение"
+  "contact-form-send": "Отправить сообщение",
+
+  "technologies-title": "Технологии",
+  "technologies-subtitle": "Часть технологий, которые я изучил и использовал при создании проектов."
 }

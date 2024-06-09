@@ -47,5 +47,8 @@
   "contact-form-email": "Enter your email",
   "contact-form-message-label": "Your message*",
   "contact-form-message": "Enter your needs",
-  "contact-form-send": "Send Message"
+  "contact-form-send": "Send Message",
+
+  "technologies-title": "Technologies",
+  "technologies-subtitle": "Some of the technologies that I have studied and used when creating projects."
 }
