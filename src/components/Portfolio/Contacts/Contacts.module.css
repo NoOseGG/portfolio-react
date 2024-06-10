@@ -47,33 +47,16 @@
   gap: 24px;
 }
 
-.input__name {
+.input {
   width: 100%;
   border-bottom: 1px solid var(--brand-2);
   padding: 8px 0;
+  color: var(--white);
+  font-size: 20px;
 
   &::placeholder {
     font: var(--para-u);
-  }
-}
-
-.input__email {
-  width: 100%;
-  border-bottom: 1px solid var(--brand-2);
-  padding: 8px 0;
-
-  &::placeholder {
-    font: var(--para-u);
-  }
-}
-
-.input__message {
-  width: 100%;
-  border-bottom: 1px solid var(--brand-2);
-  padding: 8px 0;
-
-  &::placeholder {
-    font: var(--para-u);
+    color: var(--white);
   }
 }
 

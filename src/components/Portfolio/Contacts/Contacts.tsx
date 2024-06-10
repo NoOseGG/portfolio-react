@@ -10,6 +10,10 @@ import { useTranslation } from "react-i18next";
 const Contacts: React.FC = () => {
   const { t } = useTranslation();
 
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+  };
+
   return (
     <section className={styles.contacts}>
       <Container>
@@ -19,7 +23,7 @@ const Contacts: React.FC = () => {
           <div className={styles.contacts__send__title}>
             {t("contact-send-title")}
           </div>
-          <form className={styles.contacts__form}>
+          <form className={styles.contacts__form} onSubmit={handleSubmit}>
             <div className={styles.input__container}>
               <div className={styles.input__wrapper}>
                 <label htmlFor="name" className={styles.label}>
@@ -29,7 +33,7 @@ const Contacts: React.FC = () => {
                   name="name"
                   id="name"
                   type="text"
-                  className={styles.input__name}
+                  className={styles.input}
                   placeholder={t("contact-form-name")}
                 />
               </div>
@@ -42,7 +46,7 @@ const Contacts: React.FC = () => {
                   name="email"
                   id="email"
                   type="email"
-                  className={styles.input__email}
+                  className={styles.input}
                   placeholder={t("contact-form-email")}
                 />
               </div>
@@ -55,7 +59,7 @@ const Contacts: React.FC = () => {
                 name="message"
                 id="message"
                 type="text"
-                className={styles.input__message}
+                className={styles.input}
                 placeholder={t("contact-form-message")}
               />
             </div>
