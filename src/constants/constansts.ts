@@ -10,7 +10,7 @@ export const TECHNOLOGIES = {
   reactQuery: "https://tanstack.com/query/v3",
   redux: "https://redux.js.org",
   axios: "https://axios-http.com/",
-  figma: "https://www.figma.com/",
+  scss: "https://sass-lang.com/",
   github: "https://docs.github.com/ru",
   antDesign: "https://ant.design/",
   i18next: "https://www.i18next.com/",

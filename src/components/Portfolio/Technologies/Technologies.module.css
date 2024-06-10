@@ -112,5 +112,6 @@
 @media (max-width: 400px) {
   .item__container {
     grid-column-gap: 40px;
+    margin-top: 20px;
   }
 }
