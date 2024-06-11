@@ -4,15 +4,30 @@ import styles from "./Card.module.css";
 
 import profileAvatar from "../../../../assets/images/hero/profile-photo.png";
 import { useTranslation } from "react-i18next";
+import portfolio from "../../../../download/portfolio.pdf";
 
 const Card: React.FC = () => {
   const { t } = useTranslation();
 
+  const handleDownload = () => {
+    // Создание ссылки программно
+    const link = document.createElement("a");
+    link.href = portfolio; // Путь к файлу в папке public
+    link.download = "portfolio.pdf";
+
+    // Добавление ссылки на страницу и инициирование скачивания
+    document.body.appendChild(link);
+    link.click();
+
+    // Удаление ссылки после скачивания
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={styles.card}>
       <img src={profileAvatar} alt="avatar" className={styles.card__avatar} />
-      <div className={styles.card__name}>{t('yury')}</div>
-      <div className={styles.card__proffesion}>{t('front-end')}</div>
+      <div className={styles.card__name}>{t("yury")}</div>
+      <div className={styles.card__proffesion}>{t("front-end")}</div>
 
       <ul className={styles.card__requisites__list}>
         <li className={styles.card__requisites__item}>
@@ -57,7 +72,7 @@ const Card: React.FC = () => {
               />
             </svg>
           </div>
-          {t('belarus')}
+          {t("belarus")}
         </li>
         <li className={styles.card__requisites__item}>
           <div>
@@ -76,7 +91,7 @@ const Card: React.FC = () => {
               />
             </svg>
           </div>
-          {t('full-time')}
+          {t("full-time")}
         </li>
         <li className={styles.card__requisites__item}>
           <div>
@@ -108,8 +123,8 @@ const Card: React.FC = () => {
         <li className={styles.card__tags__item}>REACT</li>
       </ul>
 
-      <button className={styles.card__button}>
-        {t('download')} CV
+      <button className={styles.card__button} onClick={handleDownload}>
+        {t("download")} CV
         <svg
           width="24"
           height="24"
