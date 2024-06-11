@@ -12,7 +12,6 @@ const BurgerMenu: React.FC = () => {
 
   const handleClick = () => {
     setIsOpen((prev) => !prev);
-    console.log(isOpen);
   };
 
   const handleClickOutside = (event: MouseEvent) => {
