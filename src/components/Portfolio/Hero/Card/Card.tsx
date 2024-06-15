@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Card.module.css";
 
-import profileAvatar from "../../../../assets/images/hero/profile-photo.png";
+import profileAvatar from "../../../../assets/avatar.png";
 import { useTranslation } from "react-i18next";
 import portfolio from "../../../../download/portfolio.pdf";
 
