@@ -33,9 +33,6 @@ const AboutMe: React.FC = () => {
                     <br />
                     <br />
                     {t('about-info-p3')}
-                    <br />
-                    <br />
-                    {t('about-info-p4')}
                   </p>
                 </div>
                 <span className={styles.tags}> &lt;/p&gt; </span>

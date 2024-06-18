@@ -14,12 +14,12 @@ const Highlights: React.FC = () => {
       </div>
 
       <div className={styles.highlights__item}>
-        <span>6</span>
+        <span>9</span>
         <div>{t('hero-highlights-tools')}</div>
       </div>
 
       <div className={styles.highlights__item}>
-        <span>1</span>
+        <span>2</span>
         <div>{t('hero-highlights-experience')}</div>
       </div>
     </div>
