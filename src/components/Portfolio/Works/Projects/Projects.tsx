@@ -5,6 +5,7 @@ import styles from "./Projects.module.css";
 import workWeather from "/src/assets/images/works/works-weather.png";
 import workRM from "/src/assets/images/works/works-r&m.png";
 import workToDo from "/src/assets/images/works/works-todo.png";
+import workAnalytix from "/src/assets/images/works/works-analytix.png";
 import buttonLeft from "/src/assets/images/works/button-l.svg";
 import buttonRight from "/src/assets/images/works/button-r.svg";
 import { useTranslation } from "react-i18next";
@@ -24,6 +25,11 @@ const projects = [
     name: "ToDo List",
     link: "https://todos-front-end.netlify.app/",
     image: workToDo,
+  },
+  {
+    name: "Analytix.by",
+    link: "https://analytix.by/",
+    image: workAnalytix,
   },
 ];
 

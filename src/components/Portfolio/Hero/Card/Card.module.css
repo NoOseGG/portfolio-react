@@ -96,3 +96,17 @@
 .card__button:focus path {
   fill: var(--white);
 }
+
+@media (max-width: 1600px) {
+  .card__button {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card__button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

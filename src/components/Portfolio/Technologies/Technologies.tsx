@@ -24,8 +24,8 @@ const Technologies: React.FC = () => {
           </p>
         </div>
         <div className={styles.item__container}>
-          {technologiesData.map((item) => (
-            <Item title={item.title} icon={item.icon} link={item.link} />
+          {technologiesData.map((item, index) => (
+            <Item title={item.title} icon={item.icon} link={item.link} key={index}/>
           ))}
         </div>
       </Container>
